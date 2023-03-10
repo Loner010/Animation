@@ -1,0 +1,36 @@
+ /* The animation code */
+ @keyframes animatedSquare {
+    0%   {border-radius: 0%;}
+    25%  {border-radius: 100%;
+          transform: rotate(90deg);}
+    50%  {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);} 
+    0% {background-color: #007ec794 ;}
+    100%{background-color: rgb(255, 0, 255);}
+}
+
+  /* The element to apply the animation to */
+  div {
+  
+    padding: 70px;
+    margin: 5%;
+    width: 100px;
+    height: 100px;
+    background-color: #007ec794;
+    animation-name: animatedSquare;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+
+  } 
+
+    .hover-rotate img {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+
+
+
